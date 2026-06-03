@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, FlatList, Image, ActivityIndicator } from 'react-native';
+
+async function delay(timeout: number) {
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("ok")
+    }, timeout);
+  })
+}
 
 type CryptoData = {
   id: string
@@ -11,9 +19,13 @@ type CryptoData = {
 
 export default function App() {
   const [coins, setCoins] = useState<CryptoData[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
   async function handleFetchCrypto() {
+    setLoading(true)
     try {
+      await delay(3000)
+
       const request = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', {
         method: "GET",
         headers: {
@@ -26,7 +38,18 @@ export default function App() {
       setCoins(data)
     } catch (e: any) {
       console.error(e.message)
+    } finally {
+      setLoading(false)
     }
+  }
+
+  if (loading) {
+    return (
+      <View style={styles.centerContainer}>
+        <ActivityIndicator size="large" color="#007BFF" />
+        <Text style={styles.loadingText}>Carregando dados da API... Aguarde</Text>
+      </View>
+    )
   }
 
   return (
@@ -91,6 +114,11 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  loadingText: {
+    marginTop: 10,
+    fontSize: 16,
+    color: '#555',
   },
   emptyText: {
     fontSize: 16,
