@@ -31,11 +31,3 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica para pratic
 *   **Tratamento de Estados:** Controle rigoroso de fluxo com `try/catch/finally` para gerenciar quando a aplicação está em estado de espera ou quando ocorre algum erro de rede.
 *   **Simulação de Latência (Delay):** Inclusão de uma função assíncrona de `delay` de 3 segundos para reter o estado de loading e demonstrar perfeitamente o funcionamento do componente visual de carregamento.
 *   **Organização de Código:** Todo o fluxo lógico e de estilização foi centralizado no diretório `src/App.tsx`, mantendo a raiz do projeto limpa.
-
----
-
-## 🔧 Como Rodar a Aplicação
-
-1. Clone este repositório para a sua máquina:
-```bash
-git clone [https://github.com/SEU_USUARIO/GuiaCripto.git](https://github.com/SEU_USUARIO/GuiaCripto.git)
