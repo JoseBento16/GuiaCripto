@@ -20,10 +20,10 @@ Este projeto foi desenvolvido como parte de uma atividade acadêmica para pratic
 
 | Estado Inicial | Carregando Dados (Loading) | Listagem em Tempo Real |
 | :---: | :---: | :---: |
-| ![Tela Inicial](<img width="381" height="837" alt="tela inicial" src="https://github.com/user-attachments/assets/d932af83-d979-4b70-b9f8-7bef9dd0a1e8" />
-) | ![Tela de Loading](<img width="378" height="837" alt="Captura de tela 2026-06-04 232601" src="https://github.com/user-attachments/assets/cfc650ed-b77a-4b83-ae62-886dbed9bdee" />
-) | ![Lista de Criptomoedas](<img width="378" height="836" alt="Captura de tela 2026-06-04 232623" src="https://github.com/user-attachments/assets/da119101-e960-44d2-b57d-e6c5e5f73b97" />
-) |
+<img width="381" height="837" alt="tela inicial" src="https://github.com/user-attachments/assets/d932af83-d979-4b70-b9f8-7bef9dd0a1e8" />
+Tela de Loading <img width="378" height="837" alt="Captura de tela 2026-06-04 232601" src="https://github.com/user-attachments/assets/cfc650ed-b77a-4b83-ae62-886dbed9bdee" />
+ !Lista de Criptomoedas<img width="378" height="836" alt="Captura de tela 2026-06-04 232623" src="https://github.com/user-attachments/assets/da119101-e960-44d2-b57d-e6c5e5f73b97" />
+
 
 > 💡 **Nota:** Para que os prints apareçam no GitHub, basta tirar capturas de tela do seu emulador ou celular, salvá-las dentro da pasta `assets/` com os nomes correspondentes (`print_inicial.png`, `print_loading.png` e `print_lista.png`) e realizar o commit.
 
